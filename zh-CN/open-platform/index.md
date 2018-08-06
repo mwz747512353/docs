@@ -30,7 +30,7 @@ $openPlatform->getPreAuthorizationUrl('https://easywechat.com/callback'); // 传
 $openPlatform->handleAuthorize(string $authCode = null);
 ```
 
-> $authCode 不传的时候会获取 url 中的 auth_code 参数值
+> $authCode 不传的时候会获取 url 中的 auth_code 参数值(这里出现bug。不传递参数后，会出现错误码40097)
 
 ## 获取授权方的帐号基本信息
 
